@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="STYLESHEET" type="text/css" href="lab.css"></link>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="UTF-8">
+    <script defer src="lab.js"></script>
+  </head>
+
+  <header>
+    <img src="Logo_USTA_2018.png">
+    <br><br><hr><br>
+  </header>
+
+  <body>
+      <section>
+        <h3>Bombillo</h3>
+        <input type="button" id="bombillo" state="off" value="" onclick="cambio(this)">
+      </section>
+
+      <section>
+        <h3>Parlante</h3>
+        <input type="button" id="parlante" state="off" value="" onclick="cambio(this)">
+      </section>
+
+      <section>
+        <h3>Brillo del LED</h3>
+          <img src="http://www.eventlights.es/WebRoot/StoreES/Shops/ea1489/4EB9/6930/50D6/38BC/124C/AC10/1417/157D/150_leds_reel_rgb_detail_800x.gif" width="80"><p></p>
+          <input type="range" min="1" max="255" value="125" id="fade_led">
+      </section>
+
+      <section>
+          <h3>Velocidad del ventilador</h3>
+          <img src="https://youraircomfort.com/wp-content/uploads/2017/07/fan-gif.gif" width="80"><p></p>
+          <input type="range" min="1" max="255" value="125" id="fade_vent">
+      </section>
+
+      <section>
+        <h3>Sensor de Temperatura</h3>
+        <span class="dot" state="off" id="T_digital"></span>
+      </section>
+
+      <section>
+        <h3>Temperatura análoga</h3>
+        <input type="text" value="0 ℃" id="T_analoga" readonly>
+      </section>
+
+      <section>
+        <h3>Sensor de Polución</h3>
+        <span class="dot" state="off" id="Polucion"></span>
+      </section>
+
+      <section>
+        <h3>Voltaje de la Fotoresistencia</h3>
+        <input type="text" value="0 V" id="V_fotoresistencia" readonly>
+      </section>
+
+      <section>
+        <input type="button" value="">
+      </section>
+  </body>
+
+  <footer align = center>
+    <br>
+    <p id = "foot" align="center"><br>
+    Universidad Santo Tomás © 2019 Todos los derechos reservados
+    <br>
+    Desarrollado por: Carolina Gómez - Santiago Barragán
+    <br><br></p>
+  </footer>
+</html>

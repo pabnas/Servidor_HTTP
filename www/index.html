@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="STYLESHEET" href="pagina.css"></link>
+    <meta charset="UTF-8">
+    <script defer src="pagina.js"></script>
+  </head>
+
+  <body>
+      <header>
+          <img src="Logo_USTA_2018.png"><br><br><br>
+      </header>
+
+      <nav>
+          <input type="button" value="Ingresar estudiantes" onclick="ShowForm()" />
+      </nav>
+
+      <section hidden>
+          <h2> Nuevo Estudiante </h2>
+              <label>Nombre</label>
+              <input type="text" id="Nombre" correcto="true"/>
+              <br>
+              <label>Apellido</label>
+              <input type="text" id="Apellido" correcto/>
+              <br>
+              <label>Facultad</label>
+              <select id="Facultades">
+                    <option value="Mecanica"> Mecanica </option>
+                    <option value="Civil"> Civil</option>
+                    <option value="Electronica"> Electronica</option>
+              </select><br>
+          <input type="button" value="Agregar" id="Agregar" onclick="addrow(false)">
+          <input type="button" value="Agregar y cerrar" id="Agregar_cerrar" onclick="addrow(true)">
+          <input type="button" value="Cancelar" id="Cancelar" onclick="HideForm()">
+      </section>
+
+      <section>
+          <h2> Listado de Estudiantes </h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Facultad</th>
+                <th> </th>
+              </tr>
+            </thead>
+            <tbody id="Lista"> </tbody>
+          </table>
+      </section>
+
+      <footer>
+        <br>
+        ©Powered by USTA
+      </footer>
+  </body>
+</html>

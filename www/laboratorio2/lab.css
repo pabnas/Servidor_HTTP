@@ -1,0 +1,232 @@
+:root
+{
+  --fondo:#0B4D9C;
+}
+
+hr
+{
+  color: var(--fondo);
+}
+
+footer p
+{
+  background-color: var(--fondo);
+  color: white;
+  font-size: 17px;
+  position: absolute;
+  top: 800px;
+  left: 0%;
+  width: 100%;
+}
+body {
+  background-color: #AC9A75;
+}
+/*bombillo*/
+body section:nth-child(2) h3+input[state=on]
+{
+  background-image: url(./bombillo_on.jpg);
+}
+
+body section:nth-child(2) h3+input[state=off]
+{
+  background-image: url(./bombillo_off.jpg);
+}
+
+body section:nth-child(2) h3+input
+{
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  background-size: 45px 75px;
+  width: 45px;
+  height: 75px;
+  border: none;
+  outline: none;
+}
+
+body section:nth-child(2)
+{
+  position: absolute;
+  left: 380px;
+  top: 220px;
+}
+/*parlante*/
+body section:nth-child(3) h3+input[state=on]
+{
+  background-image: url(./sonido_on.png);
+}
+
+body section:nth-child(3) h3+input[state=off]
+{
+  background-image: url(./sonido_off.png);
+}
+
+body section:nth-child(3) h3+input
+{
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  background-size: 70px 75px;
+  width: 70px;
+  height: 75px;
+  border: none;
+  outline: none;
+}
+
+body section:nth-child(3)
+{
+  position: absolute;
+  left: 730px;
+  top: 500px;
+}
+
+/*sliders*/
+body section:nth-child(4) h3+img
+{
+  position: relative;
+  left: 50px;
+}
+
+input[type = range]
+{
+  -webkit-appearance: none;  /* Override default CSS styles */
+  -moz-appearance: none;
+  appearance: none;
+  width: 255px; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
+  border-radius: 10px;
+}
+
+input:hover[type = range]
+{
+  opacity: 1;
+}
+
+input::-webkit-slider-thumb
+{
+  -webkit-appearance: none; /* Override default look */
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background: var(--fondo);
+  cursor: pointer;
+}
+
+input::-moz-range-thumb
+{
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background: var(--fondo);
+  cursor: pointer;
+}
+
+body section:nth-child(4)
+{
+  position: absolute;
+  left: 350px;
+  top: 630px;
+}
+
+body section:nth-child(5)
+{
+  position: absolute;
+  left: 880px;
+  top: 480px;
+}
+
+body section:nth-child(5) h3+img
+{
+  position: relative;
+  left: 80px;
+}
+
+/*indicadores*/
+span
+{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid black;
+  position: relative;
+  left: 90px;
+}
+
+span[state = "on"]
+{
+  background-color: #39D420;
+}
+
+span[state = "off"]
+{
+  background-color: #F92611;
+}
+
+input[type = "text"]
+{
+  border-radius: 10px;
+  text-align: center;
+  height: 25px;
+  width: 120px;
+  background-color: var(--fondo);
+  color: white;
+  font-size: 20px;
+  border-color: black;
+}
+
+h3
+{
+  text-align: center;
+}
+
+body section:nth-child(6)
+{
+  position: absolute;
+  left: 1120px;
+  top: 130px;
+}
+
+body section:nth-child(7)
+{
+  position: absolute;
+  left: 1120px;
+  top: 230px;
+}
+
+body section:nth-child(8)
+{
+  position: absolute;
+  left: 120px;
+  top: 400px;
+}
+
+body section:nth-child(9)
+{
+  position: absolute;
+  left: 45px;
+  top: 500px;
+}
+
+body section:nth-child(9) h3+input
+{
+  position: relative;
+  left: 110px;
+}
+
+body section:nth-child(10) input
+{
+  background-image: url(./fondo.png);
+  background-repeat: no-repeat;
+  background-size: 773px 649px;
+  width: 773px;
+  height: 649px;
+  border: none;
+  position: absolute;
+  top: 150px;
+  left: 25%;
+  z-index:-1;
+}

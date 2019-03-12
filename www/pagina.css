@@ -1,0 +1,67 @@
+nav
+{
+  background-color: #0B4D9C;
+}
+
+nav input
+{
+    background-color: #0B4D9C;
+    color: white;
+}
+
+nav+section
+{
+  background-color: #9CB1C9;
+  width: 45%;
+}
+
+nav+section input
+{
+  border-color: #E04949;
+}
+nav+section input[correcto]
+{
+  border-color: #A2A2A2;
+  border-width: 1px;
+}
+
+input[type=text]
+{
+  margin-bottom: 10px;
+}
+
+nav+section input[type = button]
+{
+    padding: 7px;
+    font-weight: 60;
+    color: #ffffff;
+    background-color: #0B4D9C;
+    border-radius: 10px 27px 0px 0px;
+    border: 2px solid #0016b0;
+    margin-left: -6px;
+    position: relative;
+    left: 6px;
+}
+
+nav+section input:hover[type =button]
+{
+  color: #1883ba;
+  background-color: #ffffff;
+}
+
+
+table
+{
+  border-collapse: collapse;
+}
+
+thead
+{
+  background-color: #0B4D9C;
+  color: #FFFFFF;
+}
+footer p
+{
+  background-color: #0B4D9C;
+  color: #FFFFFF
+}
